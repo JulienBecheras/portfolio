@@ -187,7 +187,7 @@ header > img{
 }
 
 /*################# MAIN ################*/
-body>div{
+body > div{
     margin-top: 5%;
     width:100%;
     color: black;
@@ -232,7 +232,6 @@ body article > h3{
 .techno img{
     height: 30%;
     width: 50%;
-    box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5)
 }
 .techno div{
     display: flex;
@@ -240,10 +239,45 @@ body article > h3{
     justify-content: space-between;
     align-items: center;
 }
+.techno article{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
 .techno a{
     color: #FEBEB0;
     font-size: 1.5em;
 }
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.logo img{
+    height: 10%;
+    width: 10%;
+    padding-left: 5%;
+}
+.logo img:first-child{
+    height: 5%;
+    width: 5%;
+    padding-right: 5%;
+    padding-left: 0%;
+}
+.espace > ul > li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.espace img{
+    width: 45%;
+    height: 45%;
+    padding-top: 70px;
+}
+
 .compétence > ul{
     display: flex;
     flex-direction: row;
