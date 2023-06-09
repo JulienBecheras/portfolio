@@ -1,12 +1,10 @@
 const nav = document.querySelector('.nav');
-const header = document.querySelector('.imgNav');
-let height = header.clientHeight;
-
+const imgNav = document.querySelector('.imgNav');
+let height = imgNav.clientHeight;
 window.addEventListener('scroll', () => {
-	if(window.scrollY > height) {
+	if(window.scrollY > height){
 		nav.classList.add('scroll');
-	}
-	else{
+	}else{
 		nav.classList.remove('scroll');
 	}
-})
+});
