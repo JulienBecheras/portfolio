@@ -303,6 +303,9 @@ body article > h3{
     width: 30px;
     padding: 10px;
 }
+.compétence a{
+    color: #FEBEB0;
+}
 .lvl{
     height: 15px;
     width: 15px;
@@ -319,6 +322,7 @@ body article > h3{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding-left: 0px;
 }
 .projets a,.recommandation a{
     display: flex;
@@ -329,14 +333,19 @@ body article > h3{
     min-width: 150px;
     margin: 20px;
     text-decoration: none;
+    max-width: 25%;
+    text-align: center;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: #F7F1ED;
 }
 .projets a:hover,.recommandation a:hover{
     filter: drop-shadow(5px 5px 10px #2F365F);
     -webkit-filter: drop-shadow(5px 5px 10px #2F365F)
 }
 .projets, .recommandation>ul{
-    margin-right: 20%;
-    margin-left: 20%;
+    margin-right: 15%;
+    margin-left: 15%;
 }
 .projets h3,.recommandation h3{
     color: #FEBEB0;
@@ -453,9 +462,11 @@ footer > ul img{
 }
 .projet > div{
     padding-left: 7%;
+    width: 93%;
 }
 .projet > div p{
     padding-left: 10%;
+    padding-right: 10%;
 }
 .projet .nav{
     position: fixed;

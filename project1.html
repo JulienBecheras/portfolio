@@ -9,26 +9,26 @@
 </head>
 <body class="projet">
     <ul class="nav">
-        <a href="index.html#projet">Projet</a>
+        <a href="index.html#projet">Projets</a>
         <a href="index.html#profil">Mon profil</a>
         <a href="index.html#competence">Mes compétences</a>
         <a href="#footer">Me contacter</a>
     </ul>
     <h5><a href="index.html">Home</a> > Projet 1</h5>
-    <h1>Projet 1</h1>
+    <h1>Algorithme de catégorisation de dépêches</h1>
     <section>
         <div class="info">
             <article>
                 <img src="image/horloge.png" alt="">
-                <p>temps</p>
+                <p>1 semaine</p>
             </article>
             <article>
                 <img src="image/group.png" alt="">
-                <p>X personne</p>
+                <p>2 personnes</p>
             </article>
             <article>
                 <img src="image/language.png" alt="">
-                <p>Language</p>
+                <p>Java</p>
             </article>
             <article>
                 <img src="image/download.png" alt="">
@@ -37,15 +37,15 @@
             <article>
                 <img src="image/skill.png" alt="">
                 <ul>
-                    <li>comp 1</li>
-                    <li>comp 2</li>
-                    <li>comp 3</li>
-                    <li>comp 4</li>
+                    <li>Travail d'équipe</li>
+                    <li>Algorithme de recherche</li>
+                    <li>Lecture et écriture dans un fichier</li>
+                    <li>Produire une explication en Anglais de notre projet</li>
                 </ul>
             </article>
             <article>
                 <img src="image/book.png" alt="">
-                <p>Ressources utilisées</p>
+                <p>R1.01 / R1.12</p>
             </article>
         </div>
         <img src="" alt="">
@@ -53,36 +53,42 @@
 
     <div>
         <h2>Introduction</h2>
-        <p></p>
+        <p>Durant cette SAE nous avons dû créer un programme de classification automatique de dépêches. Le but final est que ce programme soit le plus fiable et rapide possible. Pour se faire nous avions en notre possession un programme initial incomplet ainsi que deux bases de données de dépêches classées sous un format précis. La première base de données destiné à "entrainer" notre programme et la seconde est la base finale sur laquelle nous allons évaluer la performance de notre programme. Ce travail s'est déroulé en binôme. Les consignes que nous avions furent découpé en 2 parties avec une date de rendu final après une semaine de travail.</p>
     </div>
     <div>
         <h2>Partie I</h2>
-        <p></p>
+        <p>Durant cette première partie notre but était de prendre connaissance avec les attendus, comprendre et utiliser les bases de données de dépêches. 
+
+            Cette première partie était très guidé ainsi on nous a aidé pas à pas à compléter le programme initial afin d'extraire et utiliser les dépêches contenues dans les bases de données. Durant cette partie nous avons décidé de coder tous les deux l'entièreté des méthodes à utiliser afin de connaitre parfaitement le fonctionnement central de notre code. Cette décision s’est avérée payante par la suite nous permettant d'avancer beaucoup plus rapidement en comparaison d'autre groupe. 
+            
+            Concrètement nous avons codé les méthodes permettant d'extraire, et nettoyer chaque dépêche afin d'obtenir des collections contenant un type d'objet créé afin trier toutes les informations contenues dans une dépêches. Parmi ces informations on obtient le numéro de la dépêche, sa catégorie et son texte. Nous avons créé par la suite une méthode permettant de vérifier pour chaque dépêche si la catégorie trouvée par notre algorithme est la bonne. Une fois tous les résultats trouvés nous devions créer un fichier de sortie avec tous les résultats et le taux de réussite pour chaque catégorie. Nos premiers tests furent réalisés avec un système de points. Chaque mot entré était important pouvant identifier l'appartenance d'une dépêche à une catégorie. Ces mots sont entrés dans une base de données et obtenait un nombre de points (1, 2, 3), 3 décrivant une appartenance forte à une catégorie et 1 probable mais faible. Ces bases de données furent dans un premier temps créer à la main il y eu donc un long travail d'analyse du contenu des dépêches afin d'obtenir des bases de données relativement pertinentes. Ces bases de données étaient créées à partir de la base de dépêches initiale mais le test était réalisé sur les dépêches contenues dans le fichier "test".</p>
     </div>
     <div>
         <h2>Partie II</h2>
-        <p></p>
+        <p>Pour cette deuxième partie nous étions beaucoup moins guidés le but était maintenant de créer de manière automatique une base de données afin de rendre notre algorithme plus fiable. Afin de réaliser ce travail nous avons décidé de créer nous même le programme permettant de créer de manière automatique ces bases des données grâce à de mot clefs. Ensuite le choix a été de prendre le programme le plus performant et fiable comme point de départ de la suite de cette partie. Une fois ce programme de création automatique de bases de données réalisé nous nous sommes attaqués à la partie la plus complexe et longue de cette SAE l'optimisation de notre code visant à augmenter le taux de réussite de notre algorithme mais aussi à réduire le temps nécessaire à l’obtention d’un résultat. 
+
+            Cette partie s’est décomposé en trois sous-parties la première fut l’optimisation de notre code existant afin de réduire le plus possible les imbrications de boucles ainsi que le nombre d’itérations lors d’une recherche afin d’augmenter les performances de notre code. Cette première s’est soldée par des résultats très satisfaisant et des progrès encourageants. Cependant afin de proposer une recherche encore plus rapide nous avons dû repenser notre algorithme initial et ajouter des systèmes de tri de données tel que tri-fusion, tri par insertion ou l’utilisation de fonctions récursives. Cette étape nous a pris beaucoup de temps car nous testions énormément de petits changements afin de voir lesquels étaient les plus avantageux. Par la suite nous avons réalisé des recherches sur des algorithmes existant permettant de diminuer le temps de tri de notre algorithme. Quelques changements mineurs furent apportés à notre algorithme grâce à ces recherches. Cependant en comparaison du temps passés ces changements furent pour la plupart décevant. Enfin pour finir nous avons amélioré le taux de réussite de notre algorithme en modifiant divers paramètres mais aussi en essayant une multitude de systèmes de recherches de mots clefs. Nous avons ainsi obtenu plusieurs algorithmes présentant des résultats plus ou moins convaincants. Tout au long de la séquence de programmation il nous a fallu commenter notre code et le présenter de manière correcte afin d’accroitre sa lisibilité ainsi que sa compréhension par autrui.</p>
     </div>
     <div>
         <h2>Partie III</h2>
-        <p></p>
+        <p>Une fois l’entièreté du code réalisé nous avons dû effectuer un compte rendu en Anglais. Cette étape nous a permis de mettre à profit les notions apprises en anglais mais aussi d’apprendre de découvrir de nouveaux mots de vocabulaires. </p>
     </div>
     <div>
         <h2>Conclusion</h2>
-        <p></p>
+        <p>A la fin de notre projet nous avons dû réaliser une démonstration de notre programme. Pour se faire nous avons réalisé au préalable un programme permettant d’afficher pour chaque algorithme son temps d’exécution, son coût d’exécution, et son taux de réussite. Durant la présentation nous avons ainsi présenter notre algorithme puis expliquer les divers problèmes rencontrés et les solutions qui en ont résulté. Pour finir nous avons était questionné sur la partie technique de notre projet. </p>
     </div>
     <h2>Recommandation</h2>
     <section class="recommandation">
         <ul>
-            <a>
-                <h3>Projet2</h3>
+            <a href="project2.html">
+                <h3>Réalisation d'un site internet</h3>
                 <img src="image/Placeholder.png">
-                <p>blablablabla</p>
+                <p>En équipe de 3 notre but est de fournir un site web représentant de grandes entrprises. Notre public cible ? Les élève de 3ème afin de leurs permettre de se faire un avis sur leur choix d'orientation.</p>
             </a>
-            <a>
-                <h3>Projet3</h3>
+            <a href="project3.html">
+                <h3>Extraction d'information d'une base de donées</h3>
                 <img src="image/Placeholder.png">
-                <p>blablablabla</p>
+                <p>Nous sommes un duo de jeune adhérent d'une association qui lutte contre les accidents de la route. Notre mission? Consulter et trier une base de donnée en vue d'extraire des informations sur les personne de +65 ans en Nouvelle-Aquitaine.</p>
             </a>
         </ul>
     </section>
@@ -98,9 +104,9 @@
             </div>
         </section>
         <ul>
-            <a href=""><img src="image/githubColor.png" alt="GitHub"></a>
+            <a href="https://github.com/JulienBecheras"><img src="image/githubColor.png" alt="GitHub"></a>
             <a href=""><img src="image/instaColor.png" alt="Instagram"></a>
-            <a href=""><img src="image/mailColor.png" alt="Mail"></a>
+            <a href="mailto:julien.becheras@etu.univ-grenoble-alpes.fr"><img src="image/mailColor.png" alt="Mail"></a>
         </ul>
         <a href="" class="backTop"><img src="image/fleche_blanche.png" alt="back to top"></a>
         <h5> 2023 c Tous droits reservés - Julien Becheras</h5>
